@@ -28,9 +28,11 @@ public class Programa {
         int qtde = ler.nextInt();
         product.removerProduto(qtde);
         System.out.println( "novo estoque " +product.quantidade+ " total em estoque R$" +product.totalEmEstoque());
-
+        
         System.out.println("*****************");
         System.out.println( product);
+        
         ler.close();
+        
     }
 }
