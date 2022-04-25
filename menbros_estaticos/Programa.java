@@ -7,11 +7,10 @@ public class Programa {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);//formatado com '.' conforme USA
         Scanner ler = new Scanner(System.in);
-        
         Product product = new Product();
         for(int i = 0; i<=2; i++){
-        System.out.println("Informe o nome do pruduto:");
-        product.nome = ler.nextLine();
+        System.out.println("Informe o nome do produto:");
+        product.nome = ler.next();
         System.out.println("Informe o preço: ");
         product.preco = ler.nextDouble();
         System.out.println("Informe a quantidade: ");
@@ -33,8 +32,8 @@ public class Programa {
         
         System.out.println("*****************");
         System.out.println( product);
-        }
+        } 
         ler.close();
-        
     }
+    
 }
